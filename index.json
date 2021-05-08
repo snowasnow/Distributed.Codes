@@ -1,0 +1,25 @@
+[{
+    "title": "貌似终于把Distributed.Codes搭好了",
+    "date": "",
+    "description": "真的被自己蠢哭了。。。",
+    "body": "前前后后算下来折腾GitHub Pages应该有两周了吧。\n本来用的是GitHub Pages自带的Jekyll，但是找了半天也没看到好看的主题。然后转战Hexo，翻了两天也没看到喜欢的。最后好不容易找到了一个Hugo的主题，也就是现在Distributed.Codes用的这个主题的前身。但是折腾了三天，发现那个主题三年前就停止更新了，在本地预览的时候就有两个报错。第一个RSS的报错可以直接搜到解决办法，但是第二个找了半天也没找到合适的方法，在准备放弃那个主题的时候偶然在GitHub上发现竟然有人基于那个主题做了它的slim版。下下来之后发现界面做了些优化，而且原版的bug也被修复了。\n可是当我兴高采烈的下载下来，本以为直接把文件传到GitHub上就能用。谁知道传上去就告诉我404……\n“不对啊，Jekyll就是直接就能用的啊，怎么Hugo传上去会告诉我找不到index.html文件呢，我之前好像看别人说Hugo会自动识别index.md文件来着”。就因为404的问题一直来回删除新建了不下十次。实在受不了了，准备完全按别人的教程一步一步的来，看看到底是哪里出了问题。结果需要上传到GitHub的竟然不是我用\u0026quot;hugo new site xxx\u0026quot;生成的“xxx”文件,而是要在配置好主题之类的东西之后上传运行“hugo”自动生成Public文件夹。。。。。吐血😂\n真的是被自己蠢哭了。。。\n本来以为直接上传Public文件就大功告成了吧，没想到前面还有坑等着我……\n“hugo-future-imperfect-slim”主题是支持多种语言的，可是我为了偷懒，直接把除了简体中文之外的所有语言都删了。config.toml里的“DefaultContentLanguage”也从en改成后面[Languages]里写的zh-CN。谁知道把语言写成zh-CN之后Hugo竟然不认为我选择的默认语言是简体中文，而是另一种语言。这就导致我之前生成的测试用的md文件都不显示。\n结果就是又开始重复删除新建，然后再测试。终于，在十分钟前因为手滑，忘记把CN大写，结果一切都正常了。我这才发现原来是这里出了问题。。。\n第二次被自己蠢哭。。。\n到目前为止，我的Distributed.Codes差不多算是完全建好了。之后要是能想起来，而且不偷懒的话，可能会时不时的来更新一下。但是也说不好这就是最后一篇了。233333\n就这样吧。我要去上传这篇blog了。大家有缘下次见😄\n",
+    "ref": "/blog/%E8%B2%8C%E4%BC%BC%E7%BB%88%E4%BA%8E%E6%8A%8Adistributed.codes%E6%90%AD%E5%A5%BD%E4%BA%86/"
+  },{
+    "title": "要不要试一下新的设计风格？",
+    "date": "",
+    "description": "Glassmorphism风格看上去很棒的样子",
+    "body": "最近没事干看dribbble，感觉Glassmorphism风格的设计很多，而且效果很好。\n要不要试试在用SwiftUI实现一下Glassmorphism的效果，但是又是磨砂，又是半透明的，可能会很耗资源吧。 不知道GitHub上面有没有人用SwiftUI实现过，可以去找找看。要是做好了应该很好看的样子。\n",
+    "ref": "/blog/%E8%A6%81%E4%B8%8D%E8%A6%81%E8%AF%95%E4%B8%80%E4%B8%8B%E6%96%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E9%A3%8E%E6%A0%BC-%E4%B8%8A%E5%8D%881.46.41/"
+  },{
+    "title": "About",
+    "date": "",
+    "description": "建立Distributed.Codes的原因",
+    "body": "Distributed.Codes出现是个意外\n本来只是没事干去NameSilo看看有什么好点的域名\n没想到发现distributed.codes这个域名竟然没人注册\n脑子一热就注册下来了\n但是注册完之后发现好像没什么用\n为了每年十几刀不浪费\n想了想还是弄个blog吧\n不过我也不知道能在这上面写些什么\n写技术分享吧\n技术太次\n写不出什么东西\n写日常工作吐槽吧\n学校在新疆管的严\n怕吐槽太多学校找我谈话\n想来想去\n最近学校开始逼我们搞科研\n最后估计也就写些科研进展之类的\n但我们这学校科研水平也比较水\n所以如果你看到这段话\n那么请不要对这个blog的内容有多少期待\n我只能说尽量写些干货吧\n就这样\n",
+    "ref": "/about/"
+  },{
+    "title": "联系",
+    "date": "",
+    "description": "",
+    "body": "",
+    "ref": "/contact/"
+  }]

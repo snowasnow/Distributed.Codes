@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="zh-cn">
+  <head>
+  <meta charset="utf-8">
+<title>貌似终于把Distributed.Codes搭好了 - Distributed Codes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="generator" content="Hugo 0.82.1" /><meta property="og:site_name" content="Distributed Codes">
+  <meta property="og:title" content="貌似终于把Distributed.Codes搭好了">
+  <meta property="og:description" content="真的被自己蠢哭了。。。">
+  <meta property="description" content="真的被自己蠢哭了。。。">
+  <meta property="og:url" content="https://distributed.codes/blog/%E8%B2%8C%E4%BC%BC%E7%BB%88%E4%BA%8E%E6%8A%8Adistributed.codes%E6%90%AD%E5%A5%BD%E4%BA%86/">
+  <meta property="og:type" content="article">
+  
+    
+      <meta property="og:image" content="https://distributed.codes/img/2021/05/pencil-banner.jpg">
+      <meta property="og:image:alt" content="pencil-banner">
+    
+  
+  <link rel="stylesheet" href="/css/bundle.min.9b0f87cba51f7b7938d133fa4e3fd7462aaef0ee900f2c696d7b57cedb163e70.css" integrity="sha256-mw&#43;Hy6Ufe3k40TP6Tj/XRiqu8O6QDyxpbXtXztsWPnA="><link rel="stylesheet" href="/css/add-on.css">
+</head>
+
+  <body>
+    
+
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/" class="nav">
+        
+          博客
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu menu">
+      
+        
+          
+          <a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
+        
+      
+        
+          
+          <a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
+        
+      
+        
+          
+          <a href="/blog" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
+        
+      
+        
+          
+          <a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
+        
+      
+        
+          
+          <a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
+        
+      
+      <a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+      <a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
+    </menu>
+    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+    <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+    <a href="#lang-menu" class="nav lang-toggle" lang="zh-cn">zh-cn</a>
+    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+  <menu id="lang-menu" class="flyout-menu menu">
+  <a href="#" lang="zh-cn" class="nav link active">中文 (简体) (zh-cn)</a>
+  
+    
+      
+    
+  
+</menu>
+
+  
+    <menu id="share-menu" class="flyout-menu menu">
+      <h1>Share Post</h1>
+      
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=%e8%b2%8c%e4%bc%bc%e7%bb%88%e4%ba%8e%e6%8a%8aDistributed.Codes%e6%90%ad%e5%a5%bd%e4%ba%86&amp;url=https%3a%2f%2fdistributed.codes%2fblog%2f%25E8%25B2%258C%25E4%25BC%25BC%25E7%25BB%2588%25E4%25BA%258E%25E6%258A%258Adistributed.codes%25E6%2590%25AD%25E5%25A5%25BD%25E4%25BA%2586%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <p>Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fdistributed.codes%2fblog%2f%25E8%25B2%258C%25E4%25BC%25BC%25E7%25BB%2588%25E4%25BA%258E%25E6%258A%258Adistributed.codes%25E6%2590%25AD%25E5%25A5%25BD%25E4%25BA%2586%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <p>Facebook</p>
+        </a>
+  
+
+
+    </menu>
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro" >
+  <a href="/"><img src="https://distributed.codes/img/main/logo.jpg" class="circle" width="100" alt="Hugo Future Imperfect Slim" /></a>
+  <header>
+    <h1>Distributed Codes</h1>
+  </header>
+  <main>
+    <p>随便写写，随便玩玩</p>
+  </main>
+  
+    <footer>
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/snowasnow" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//twitter.com/snowasnow" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
+    </footer>
+  
+</section>
+
+      <main id="site-main">
+        
+  <article>
+    <div class="post">
+      <header>
+  <div class="title">
+    
+      <h2><a href="/blog/%E8%B2%8C%E4%BC%BC%E7%BB%88%E4%BA%8E%E6%8A%8Adistributed.codes%E6%90%AD%E5%A5%BD%E4%BA%86/">貌似终于把Distributed.Codes搭好了</a></h2>
+    
+    
+      <p>真的被自己蠢哭了。。。</p>
+    
+  </div>
+  <div class="meta">
+    <time datetime="2021-05-09 02:19:28 &#43;0800 CST">May 9, 2021</time>
+    <p>SA.Snow</p>
+    <p>1 分钟</p>
+  </div>
+</header>
+
+      <div id="socnet-share">
+        
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=%e8%b2%8c%e4%bc%bc%e7%bb%88%e4%ba%8e%e6%8a%8aDistributed.Codes%e6%90%ad%e5%a5%bd%e4%ba%86&amp;url=https%3a%2f%2fdistributed.codes%2fblog%2f%25E8%25B2%258C%25E4%25BC%25BC%25E7%25BB%2588%25E4%25BA%258E%25E6%258A%258Adistributed.codes%25E6%2590%25AD%25E5%25A5%25BD%25E4%25BA%2586%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <p>Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fdistributed.codes%2fblog%2f%25E8%25B2%258C%25E4%25BC%25BC%25E7%25BB%2588%25E4%25BA%258E%25E6%258A%258Adistributed.codes%25E6%2590%25AD%25E5%25A5%25BD%25E4%25BA%2586%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <p>Facebook</p>
+        </a>
+  
+
+
+      </div>
+      <div class="content">
+        <a href="/blog/%E8%B2%8C%E4%BC%BC%E7%BB%88%E4%BA%8E%E6%8A%8Adistributed.codes%E6%90%AD%E5%A5%BD%E4%BA%86/" class="image" style="--bg-image: url('https://distributed.codes/img/2021/05/pencil-banner.jpg');">
+    <img class="stretchH" src="https://distributed.codes/img/2021/05/pencil-banner.jpg" alt="pencil-banner">
+  </a>
+        <p>前前后后算下来折腾GitHub Pages应该有两周了吧。</p>
+<p>本来用的是GitHub Pages自带的Jekyll，但是找了半天也没看到好看的主题。然后转战Hexo，翻了两天也没看到喜欢的。最后好不容易找到了一个Hugo的主题，也就是现在Distributed.Codes用的这个主题的前身。但是折腾了三天，发现那个主题三年前就停止更新了，在本地预览的时候就有两个报错。第一个RSS的报错可以直接搜到解决办法，但是第二个找了半天也没找到合适的方法，在准备放弃那个主题的时候偶然在GitHub上发现竟然有人基于那个主题做了它的slim版。下下来之后发现界面做了些优化，而且原版的bug也被修复了。<br>
+可是当我兴高采烈的下载下来，本以为直接把文件传到GitHub上就能用。谁知道传上去就告诉我404……<br>
+“不对啊，Jekyll就是直接就能用的啊，怎么Hugo传上去会告诉我找不到index.html文件呢，我之前好像看别人说Hugo会自动识别index.md文件来着”。就因为404的问题一直来回删除新建了不下十次。实在受不了了，准备完全按别人的教程一步一步的来，看看到底是哪里出了问题。结果需要上传到GitHub的竟然不是我用&quot;hugo new site xxx&quot;生成的“xxx”文件,而是要在配置好主题之类的东西之后上传运行“hugo”自动生成Public文件夹。。。。。吐血😂<br>
+真的是被自己蠢哭了。。。<br>
+本来以为直接上传Public文件就大功告成了吧，没想到前面还有坑等着我……<br>
+“hugo-future-imperfect-slim”主题是支持多种语言的，可是我为了偷懒，直接把除了简体中文之外的所有语言都删了。config.toml里的“DefaultContentLanguage”也从en改成后面[Languages]里写的zh-CN。谁知道把语言写成zh-CN之后Hugo竟然不认为我选择的默认语言是简体中文，而是另一种语言。这就导致我之前生成的测试用的md文件都不显示。<br>
+结果就是又开始重复删除新建，然后再测试。终于，在十分钟前因为手滑，忘记把CN大写，结果一切都正常了。我这才发现原来是这里出了问题。。。<br>
+第二次被自己蠢哭。。。<br>
+到目前为止，我的Distributed.Codes差不多算是完全建好了。之后要是能想起来，而且不偷懒的话，可能会时不时的来更新一下。但是也说不好这就是最后一篇了。233333<br>
+就这样吧。我要去上传这篇blog了。大家有缘下次见😄</p>
+      </div>
+      <footer>
+        <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/categories/life/">Life</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/tags/hugo/">Hugo</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/%e6%97%a5%e5%b8%b8/">日常</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+      </footer>
+    </div>
+    
+      
+  <div class='post'>
+    
+    <div>
+      <h2 id='say-something'>说些什么</h2>
+        <form id='comment-form' class='new-comment' method='POST'>
+          
+          <h3 class='reply-notice hidden'>
+            <span class='reply-name'></span>
+            <a class='reply-close-btn button'><i class='fas fa-times'></i></a>
+          </h3>
+
+          
+          <input type='hidden' name='options[entryId]' value='3aad784256ab782da4a05737ea95888f'>
+          <input type='hidden' name='fields[replyThread]' value=''>
+          <input type='hidden' name='fields[replyID]' value=''>
+          <input type='hidden' name='fields[replyName]' value=''>
+
+          
+          <input required name='fields[name]' type='text' placeholder='你的名字'>
+          <input name='fields[website]' type='text' placeholder='你的网页'>
+          <input required name='fields[email]' type='email' placeholder='你的邮件'>
+          <textarea required name='fields[body]' placeholder='你的信息' rows='10'></textarea>
+
+          
+          
+
+          
+          <div class='submit-notice'>
+            <strong class='submit-notice-text submit-success hidden'>感谢你的评论！被批准后它会立即在此站点展示。</strong>
+            <strong class='submit-notice-text submit-failed hidden'>很抱歉，你的提交存在错误。请确保所有必填字段都已填写正确，然后再试一次。</strong>
+          </div>
+
+          
+          <input type='submit' value='发送' class='button'>
+          <input type='submit' value='已发送' class='hidden button' disabled>
+          <input type='reset' value='重设' class='button'>
+        </form>
+    </div>
+
+    
+    <div class='comments-container'>
+      <h2>评论</h2>
+    </div>
+  </div>
+
+
+    
+  </article>
+  <div class="pagination">
+    
+    
+      <a href="/blog/%E8%A6%81%E4%B8%8D%E8%A6%81%E8%AF%95%E4%B8%80%E4%B8%8B%E6%96%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E9%A3%8E%E6%A0%BC-%E4%B8%8A%E5%8D%881.46.41/" class="button right"><span>要不要试一下新的设计风格？</span></a>
+    
+  </div>
+
+      </main>
+      <section id="site-sidebar">
+  
+    <section id="recent-posts">
+      <header>
+        <h1>最新文章</h1>
+      </header>
+      
+      <article class="mini-post">
+          <a href="/blog/%E8%B2%8C%E4%BC%BC%E7%BB%88%E4%BA%8E%E6%8A%8Adistributed.codes%E6%90%AD%E5%A5%BD%E4%BA%86/" class="image" style="--bg-image: url('https://distributed.codes/img/2021/05/pencil-banner.jpg');">
+    <img class="stretchH" src="https://distributed.codes/img/2021/05/pencil-banner.jpg" alt="pencil-banner">
+  </a>
+        <header>
+          <h2><a href="/blog/%E8%B2%8C%E4%BC%BC%E7%BB%88%E4%BA%8E%E6%8A%8Adistributed.codes%E6%90%AD%E5%A5%BD%E4%BA%86/">貌似终于把Distributed.Codes搭好了</a></h2>
+          <time class="published" datetime="2021-05-09 02:19:28 &#43;0800 CST">May 9, 2021</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          <a href="/blog/%E8%A6%81%E4%B8%8D%E8%A6%81%E8%AF%95%E4%B8%80%E4%B8%8B%E6%96%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E9%A3%8E%E6%A0%BC-%E4%B8%8A%E5%8D%881.46.41/" class="image" style="--bg-image: url('https://distributed.codes/img/2021/05/Glassmorphism.png');">
+    <img class="stretchH" src="https://distributed.codes/img/2021/05/Glassmorphism.png" alt="Glassmorphism">
+  </a>
+        <header>
+          <h2><a href="/blog/%E8%A6%81%E4%B8%8D%E8%A6%81%E8%AF%95%E4%B8%80%E4%B8%8B%E6%96%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E9%A3%8E%E6%A0%BC-%E4%B8%8A%E5%8D%881.46.41/">要不要试一下新的设计风格？</a></h2>
+          <time class="published" datetime="2021-05-09 00:43:43 &#43;0800 CST">May 9, 2021</time>
+        </header>
+      </article>
+      
+      
+    </section>
+  
+
+  
+    
+
+      <section id="categories">
+        <header>
+          <h1><a href="/categories">分类</a></h1>
+        </header>
+        <ul>
+          
+          
+          <li>
+              <a href="/categories/life/">life<span class="count">2</span></a>
+          
+          </li>
+        </ul>
+      </section>
+    
+  
+
+  
+    <section id="mini-bio">
+      <header>
+        <h1>关于</h1>
+      </header>
+      <p>Distributed.Codes出现是个意外，本来只是没事干去NameSilo看看有什么好点的域名……</p>
+      <footer>
+        <a href="/about" class="button">详细了解</a>
+      </footer>
+    </section>
+  
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/snowasnow" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//twitter.com/snowasnow" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
+  
+  <p class="copyright">
+    © 2021 Distributed Codes
+      <br>
+    主题: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>移植自 <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | 由 <a href='https://gohugo.io/' target='_blank' rel='noopener' title='0.82.1'>Hugo</a> 驱动
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      <script src="/js/highlight.js"></script>
+    
+    <script>hljs.highlightAll();</script><script src="/js/bundle.min.8d25586e5b73534bd2abdfd61cdebb4fb64e4de08192a1166dc2f153d5c169b4.js" integrity="sha256-jSVYbltzU0vSq9/WHN67T7ZOTeCBkqEWbcLxU9XBabQ="></script>
+    <script src="/js/add-on.js"></script>
+    </div>
+  </body>
+</html>

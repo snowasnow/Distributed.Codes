@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Distributed Codes</title>
+    <link>https://distributed.codes/tags/hugo/</link>
+    <description>Recent content in Hugo on Distributed Codes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 09 May 2021 02:19:28 +0800</lastBuildDate><atom:link href="https://distributed.codes/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>貌似终于把Distributed.Codes搭好了</title>
+      <link>https://distributed.codes/blog/%E8%B2%8C%E4%BC%BC%E7%BB%88%E4%BA%8E%E6%8A%8Adistributed.codes%E6%90%AD%E5%A5%BD%E4%BA%86/</link>
+      <pubDate>Sun, 09 May 2021 02:19:28 +0800</pubDate>
+      
+      <guid>https://distributed.codes/blog/%E8%B2%8C%E4%BC%BC%E7%BB%88%E4%BA%8E%E6%8A%8Adistributed.codes%E6%90%AD%E5%A5%BD%E4%BA%86/</guid>
+      <description>&lt;p&gt;前前后后算下来折腾GitHub Pages应该有两周了吧。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

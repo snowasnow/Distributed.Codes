@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Design on Distributed Codes</title>
+    <link>https://distributed.codes/tags/design/</link>
+    <description>Recent content in Design on Distributed Codes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 09 May 2021 00:43:43 +0800</lastBuildDate><atom:link href="https://distributed.codes/tags/design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>要不要试一下新的设计风格？</title>
+      <link>https://distributed.codes/blog/%E8%A6%81%E4%B8%8D%E8%A6%81%E8%AF%95%E4%B8%80%E4%B8%8B%E6%96%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E9%A3%8E%E6%A0%BC-%E4%B8%8A%E5%8D%881.46.41/</link>
+      <pubDate>Sun, 09 May 2021 00:43:43 +0800</pubDate>
+      
+      <guid>https://distributed.codes/blog/%E8%A6%81%E4%B8%8D%E8%A6%81%E8%AF%95%E4%B8%80%E4%B8%8B%E6%96%B0%E7%9A%84%E8%AE%BE%E8%AE%A1%E9%A3%8E%E6%A0%BC-%E4%B8%8A%E5%8D%881.46.41/</guid>
+      <description>&lt;p&gt;最近没事干看dribbble，感觉Glassmorphism风格的设计很多，而且效果很好。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
