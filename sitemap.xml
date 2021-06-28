@@ -3,21 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://distributed.codes/blog/</loc>
-    <lastmod>2021-05-28T11:39:14+08:00</lastmod>
+    <lastmod>2021-06-28T16:57:30+08:00</lastmod>
   </url><url>
     <loc>https://distributed.codes/categories/</loc>
-    <lastmod>2021-05-28T11:39:14+08:00</lastmod>
+    <lastmod>2021-06-28T16:57:30+08:00</lastmod>
+  </url><url>
+    <loc>https://distributed.codes/</loc>
+    <lastmod>2021-06-28T16:57:30+08:00</lastmod>
+  </url><url>
+    <loc>https://distributed.codes/tags/ergotron/</loc>
+    <lastmod>2021-06-28T16:57:30+08:00</lastmod>
+  </url><url>
+    <loc>https://distributed.codes/tags/health/</loc>
+    <lastmod>2021-06-28T16:57:30+08:00</lastmod>
+  </url><url>
+    <loc>https://distributed.codes/tags/herman-miller/</loc>
+    <lastmod>2021-06-28T16:57:30+08:00</lastmod>
+  </url><url>
+    <loc>https://distributed.codes/categories/life/</loc>
+    <lastmod>2021-06-28T16:57:30+08:00</lastmod>
+  </url><url>
+    <loc>https://distributed.codes/tags/</loc>
+    <lastmod>2021-06-28T16:57:30+08:00</lastmod>
+  </url><url>
+    <loc>https://distributed.codes/blog/%E4%BD%93%E6%A3%80%E7%BB%93%E6%9E%9C%E5%87%BA%E6%9D%A5%E4%BA%86/</loc>
+    <lastmod>2021-06-28T16:57:30+08:00</lastmod>
   </url><url>
     <loc>https://distributed.codes/categories/dev/</loc>
     <lastmod>2021-05-28T11:39:14+08:00</lastmod>
   </url><url>
-    <loc>https://distributed.codes/</loc>
-    <lastmod>2021-05-28T11:39:14+08:00</lastmod>
-  </url><url>
     <loc>https://distributed.codes/tags/keras/</loc>
-    <lastmod>2021-05-28T11:39:14+08:00</lastmod>
-  </url><url>
-    <loc>https://distributed.codes/tags/</loc>
     <lastmod>2021-05-28T11:39:14+08:00</lastmod>
   </url><url>
     <loc>https://distributed.codes/tags/tensorflow/</loc>
@@ -27,12 +42,6 @@
     <lastmod>2021-05-28T11:39:14+08:00</lastmod>
   </url><url>
     <loc>https://distributed.codes/tags/apple-watch/</loc>
-    <lastmod>2021-05-25T11:07:49+08:00</lastmod>
-  </url><url>
-    <loc>https://distributed.codes/tags/health/</loc>
-    <lastmod>2021-05-25T11:07:49+08:00</lastmod>
-  </url><url>
-    <loc>https://distributed.codes/categories/life/</loc>
     <lastmod>2021-05-25T11:07:49+08:00</lastmod>
   </url><url>
     <loc>https://distributed.codes/blog/%E7%AC%AC%E4%B8%80%E6%AC%A1%E7%94%A8%E5%88%B0%E4%BA%86applewatch%E7%9A%84%E9%AB%98%E5%BF%83%E7%8E%87%E6%8A%A5%E8%AD%A6/</loc>
