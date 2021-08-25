@@ -18,7 +18,7 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
 
-<meta name="generator" content="Hugo 0.82.1" /><meta property="og:site_name" content="Distributed Codes">
+<meta name="generator" content="Hugo 0.87.0" /><meta property="og:site_name" content="Distributed Codes">
   <meta property="og:title" content="【文档翻译】keras的图象增强对象类ImageDataGenerator">
   <meta property="og:description" content="图象增强对象类ImageDataGenerator">
   <meta property="description" content="图象增强对象类ImageDataGenerator">
@@ -30,7 +30,7 @@
       <meta property="og:image:alt" content="keras">
     
   
-  <link rel="stylesheet" href="/css/bundle.min.9b0f87cba51f7b7938d133fa4e3fd7462aaef0ee900f2c696d7b57cedb163e70.css" integrity="sha256-mw&#43;Hy6Ufe3k40TP6Tj/XRiqu8O6QDyxpbXtXztsWPnA="><link rel="stylesheet" href="/css/add-on.css">
+  <link rel="stylesheet" href="/css/bundle.min.6ad9eb85bff384c75937a02036b01425a2ca63f19a96535b8ba5b181db62a4b3.css" integrity="sha256-atnrhb/zhMdZN6AgNrAUJaLKY/GallNbi6WxgdtipLM="><link rel="stylesheet" href="/css/add-on.css">
 </head>
 
   <body>
@@ -191,7 +191,7 @@
     
   </div>
   <div class="meta">
-    <time datetime="2021-05-28 11:39:14 &#43;0800 CST">May 28, 2021</time>
+    <time datetime="2021-05-28 11:39:14 &#43;0800 &#43;0800">May 28, 2021</time>
     <p>SA.Snow</p>
     <p>2 分钟</p>
   </div>
@@ -224,29 +224,29 @@
   </a>
         <h2 id="font-colorpinkimagedatageneratorfont-class"><font color=pink>ImageDataGenerator</font> class</h2>
 <p>用实时数据增强的方式生成批量的张量图像数据。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">tf<span style="color:#f92672">.</span>keras<span style="color:#f92672">.</span>preprocessing<span style="color:#f92672">.</span>image<span style="color:#f92672">.</span>ImageDataGenerator(
-    featurewise_center<span style="color:#f92672">=</span>False,
-    samplewise_center<span style="color:#f92672">=</span>False,
-    featurewise_std_normalization<span style="color:#f92672">=</span>False,
-    samplewise_std_normalization<span style="color:#f92672">=</span>False,
-    zca_whitening<span style="color:#f92672">=</span>False,
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">tf<span style="color:#f92672">.</span>keras<span style="color:#f92672">.</span>preprocessing<span style="color:#f92672">.</span>image<span style="color:#f92672">.</span>ImageDataGenerator(
+    featurewise_center<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>,
+    samplewise_center<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>,
+    featurewise_std_normalization<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>,
+    samplewise_std_normalization<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>,
+    zca_whitening<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>,
     zca_epsilon<span style="color:#f92672">=</span><span style="color:#ae81ff">1e-06</span>,
     rotation_range<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>,
     width_shift_range<span style="color:#f92672">=</span><span style="color:#ae81ff">0.0</span>,
     height_shift_range<span style="color:#f92672">=</span><span style="color:#ae81ff">0.0</span>,
-    brightness_range<span style="color:#f92672">=</span>None,
+    brightness_range<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>,
     shear_range<span style="color:#f92672">=</span><span style="color:#ae81ff">0.0</span>,
     zoom_range<span style="color:#f92672">=</span><span style="color:#ae81ff">0.0</span>,
     channel_shift_range<span style="color:#f92672">=</span><span style="color:#ae81ff">0.0</span>,
     fill_mode<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nearest&#34;</span>,
     cval<span style="color:#f92672">=</span><span style="color:#ae81ff">0.0</span>,
-    horizontal_flip<span style="color:#f92672">=</span>False,
-    vertical_flip<span style="color:#f92672">=</span>False,
-    rescale<span style="color:#f92672">=</span>None,
-    preprocessing_function<span style="color:#f92672">=</span>None,
-    data_format<span style="color:#f92672">=</span>None,
+    horizontal_flip<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>,
+    vertical_flip<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>,
+    rescale<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>,
+    preprocessing_function<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>,
+    data_format<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>,
     validation_split<span style="color:#f92672">=</span><span style="color:#ae81ff">0.0</span>,
-    dtype<span style="color:#f92672">=</span>None,
+    dtype<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>,
 )</code></pre></div>
 <p>每批次内所生成的数据将被循环使用。</p>
 <h3 id="参数">参数</h3>
@@ -276,16 +276,16 @@
 </ul>
 <h4 id="范例">范例</h4>
 <p>使用<font color=pink>.flow(x, y)</font>:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">(x_train, y_train), (x_test, y_test) <span style="color:#f92672">=</span> cifar10<span style="color:#f92672">.</span>load_data()
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">(x_train, y_train), (x_test, y_test) <span style="color:#f92672">=</span> cifar10<span style="color:#f92672">.</span>load_data()
 y_train <span style="color:#f92672">=</span> utils<span style="color:#f92672">.</span>to_categorical(y_train, num_classes)
 y_test <span style="color:#f92672">=</span> utils<span style="color:#f92672">.</span>to_categorical(y_test, num_classes)
 datagen <span style="color:#f92672">=</span> ImageDataGenerator(
-    featurewise_center<span style="color:#f92672">=</span>True,
-    featurewise_std_normalization<span style="color:#f92672">=</span>True,
+    featurewise_center<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>,
+    featurewise_std_normalization<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>,
     rotation_range<span style="color:#f92672">=</span><span style="color:#ae81ff">20</span>,
     width_shift_range<span style="color:#f92672">=</span><span style="color:#ae81ff">0.2</span>,
     height_shift_range<span style="color:#f92672">=</span><span style="color:#ae81ff">0.2</span>,
-    horizontal_flip<span style="color:#f92672">=</span>True,
+    horizontal_flip<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>,
     validation_split<span style="color:#f92672">=</span><span style="color:#ae81ff">0.2</span>)
 <span style="color:#75715e"># compute quantities required for featurewise normalization</span>
 <span style="color:#75715e"># (std, mean, and principal components if ZCA whitening is applied)</span>
@@ -298,7 +298,7 @@ model<span style="color:#f92672">.</span>fit(datagen<span style="color:#f92672">
          steps_per_epoch<span style="color:#f92672">=</span>len(x_train) <span style="color:#f92672">/</span> <span style="color:#ae81ff">32</span>, epochs<span style="color:#f92672">=</span>epochs)
 <span style="color:#75715e"># here&#39;s a more &#34;manual&#34; example</span>
 <span style="color:#66d9ef">for</span> e <span style="color:#f92672">in</span> range(epochs):
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;Epoch&#39;</span>, e)
+    print(<span style="color:#e6db74">&#39;Epoch&#39;</span>, e)
     batches <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
     <span style="color:#66d9ef">for</span> x_batch, y_batch <span style="color:#f92672">in</span> datagen<span style="color:#f92672">.</span>flow(x_train, y_train, batch_size<span style="color:#f92672">=</span><span style="color:#ae81ff">32</span>):
         model<span style="color:#f92672">.</span>fit(x_batch, y_batch)
@@ -308,11 +308,11 @@ model<span style="color:#f92672">.</span>fit(datagen<span style="color:#f92672">
             <span style="color:#75715e"># the generator loops indefinitely</span>
             <span style="color:#66d9ef">break</span></code></pre></div></p>
 <p>使用<font color=pink>.flow_from_directory(directory)</font>:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">train_datagen <span style="color:#f92672">=</span> ImageDataGenerator(
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">train_datagen <span style="color:#f92672">=</span> ImageDataGenerator(
         rescale<span style="color:#f92672">=</span><span style="color:#ae81ff">1.</span><span style="color:#f92672">/</span><span style="color:#ae81ff">255</span>,
         shear_range<span style="color:#f92672">=</span><span style="color:#ae81ff">0.2</span>,
         zoom_range<span style="color:#f92672">=</span><span style="color:#ae81ff">0.2</span>,
-        horizontal_flip<span style="color:#f92672">=</span>True)
+        horizontal_flip<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
 test_datagen <span style="color:#f92672">=</span> ImageDataGenerator(rescale<span style="color:#f92672">=</span><span style="color:#ae81ff">1.</span><span style="color:#f92672">/</span><span style="color:#ae81ff">255</span>)
 train_generator <span style="color:#f92672">=</span> train_datagen<span style="color:#f92672">.</span>flow_from_directory(
         <span style="color:#e6db74">&#39;data/train&#39;</span>,
@@ -331,9 +331,9 @@ model<span style="color:#f92672">.</span>fit(
         validation_data<span style="color:#f92672">=</span>validation_generator,
         validation_steps<span style="color:#f92672">=</span><span style="color:#ae81ff">800</span>)</code></pre></div></p>
 <p>将图像和遮罩一起转换。
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># we create two instances with the same arguments</span>
-data_gen_args <span style="color:#f92672">=</span> dict(featurewise_center<span style="color:#f92672">=</span>True,
-                     featurewise_std_normalization<span style="color:#f92672">=</span>True,
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># we create two instances with the same arguments</span>
+data_gen_args <span style="color:#f92672">=</span> dict(featurewise_center<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>,
+                     featurewise_std_normalization<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>,
                      rotation_range<span style="color:#f92672">=</span><span style="color:#ae81ff">90</span>,
                      width_shift_range<span style="color:#f92672">=</span><span style="color:#ae81ff">0.1</span>,
                      height_shift_range<span style="color:#f92672">=</span><span style="color:#ae81ff">0.1</span>,
@@ -342,15 +342,15 @@ image_datagen <span style="color:#f92672">=</span> ImageDataGenerator(<span styl
 mask_datagen <span style="color:#f92672">=</span> ImageDataGenerator(<span style="color:#f92672">**</span>data_gen_args)
 <span style="color:#75715e"># Provide the same seed and keyword arguments to the fit and flow methods</span>
 seed <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
-image_datagen<span style="color:#f92672">.</span>fit(images, augment<span style="color:#f92672">=</span>True, seed<span style="color:#f92672">=</span>seed)
-mask_datagen<span style="color:#f92672">.</span>fit(masks, augment<span style="color:#f92672">=</span>True, seed<span style="color:#f92672">=</span>seed)
+image_datagen<span style="color:#f92672">.</span>fit(images, augment<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>, seed<span style="color:#f92672">=</span>seed)
+mask_datagen<span style="color:#f92672">.</span>fit(masks, augment<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>, seed<span style="color:#f92672">=</span>seed)
 image_generator <span style="color:#f92672">=</span> image_datagen<span style="color:#f92672">.</span>flow_from_directory(
     <span style="color:#e6db74">&#39;data/images&#39;</span>,
-    class_mode<span style="color:#f92672">=</span>None,
+    class_mode<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>,
     seed<span style="color:#f92672">=</span>seed)
 mask_generator <span style="color:#f92672">=</span> mask_datagen<span style="color:#f92672">.</span>flow_from_directory(
     <span style="color:#e6db74">&#39;data/masks&#39;</span>,
-    class_mode<span style="color:#f92672">=</span>None,
+    class_mode<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>,
     seed<span style="color:#f92672">=</span>seed)
 <span style="color:#75715e"># combine generators into one which yields image and masks</span>
 train_generator <span style="color:#f92672">=</span> zip(image_generator, mask_generator)
@@ -408,12 +408,22 @@ model<span style="color:#f92672">.</span>fit(
       </header>
       
       <article class="mini-post">
+          <a href="/blog/%E6%88%91%E6%98%AF%E7%9C%9F%E7%9A%84%E4%B8%8D%E6%83%B3%E5%BD%93%E9%A2%86%E5%AF%BC/" class="image" style="--bg-image: url('https://distributed.codes/img/2021/08/Resignation.jpg');">
+    <img class="stretchH" src="https://distributed.codes/img/2021/08/Resignation.jpg" alt="Resignation">
+  </a>
+        <header>
+          <h2><a href="/blog/%E6%88%91%E6%98%AF%E7%9C%9F%E7%9A%84%E4%B8%8D%E6%83%B3%E5%BD%93%E9%A2%86%E5%AF%BC/">我是真的不想当领导</a></h2>
+          <time class="published" datetime="2021-08-25 20:51:26 &#43;0800 &#43;0800">August 25, 2021</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
           <a href="/blog/%E4%BD%93%E6%A3%80%E7%BB%93%E6%9E%9C%E5%87%BA%E6%9D%A5%E4%BA%86/" class="image" style="--bg-image: url('https://distributed.codes/img/2021/06/MonitorStand.jpg');">
     <img class="stretchH" src="https://distributed.codes/img/2021/06/MonitorStand.jpg" alt="显示器支架">
   </a>
         <header>
           <h2><a href="/blog/%E4%BD%93%E6%A3%80%E7%BB%93%E6%9E%9C%E5%87%BA%E6%9D%A5%E4%BA%86/">体检结果出来了</a></h2>
-          <time class="published" datetime="2021-06-28 16:57:30 &#43;0800 CST">June 28, 2021</time>
+          <time class="published" datetime="2021-06-28 16:57:30 &#43;0800 &#43;0800">June 28, 2021</time>
         </header>
       </article>
       
@@ -423,7 +433,7 @@ model<span style="color:#f92672">.</span>fit(
   </a>
         <header>
           <h2><a href="/blog/%E6%96%87%E6%A1%A3%E7%BF%BB%E8%AF%91keras%E7%9A%84%E5%9B%BE%E8%B1%A1%E5%A2%9E%E5%BC%BA%E5%AF%B9%E8%B1%A1%E7%B1%BBimagedatagenerator/">【文档翻译】keras的图象增强对象类ImageDataGenerator</a></h2>
-          <time class="published" datetime="2021-05-28 11:39:14 &#43;0800 CST">May 28, 2021</time>
+          <time class="published" datetime="2021-05-28 11:39:14 &#43;0800 &#43;0800">May 28, 2021</time>
         </header>
       </article>
       
@@ -433,7 +443,7 @@ model<span style="color:#f92672">.</span>fit(
   </a>
         <header>
           <h2><a href="/blog/%E7%AC%AC%E4%B8%80%E6%AC%A1%E7%94%A8%E5%88%B0%E4%BA%86applewatch%E7%9A%84%E9%AB%98%E5%BF%83%E7%8E%87%E6%8A%A5%E8%AD%A6/">第一次用到了AppleWatch的高心率报警</a></h2>
-          <time class="published" datetime="2021-05-25 11:07:49 &#43;0800 CST">May 25, 2021</time>
+          <time class="published" datetime="2021-05-25 11:07:49 &#43;0800 &#43;0800">May 25, 2021</time>
         </header>
       </article>
       
@@ -443,17 +453,7 @@ model<span style="color:#f92672">.</span>fit(
   </a>
         <header>
           <h2><a href="/blog/%E4%BD%93%E9%AA%8C%E4%BA%86%E4%B8%80%E4%B8%8B%E7%82%92%E5%B8%81%E7%9A%84%E6%84%9F%E8%A7%89/">体验了一下炒币的感觉</a></h2>
-          <time class="published" datetime="2021-05-22 00:48:55 &#43;0800 CST">May 22, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/blog/%E6%89%93%E4%BA%86%E7%AC%AC%E4%BA%8C%E9%92%88%E7%A7%91%E5%85%B4%E7%96%AB%E8%8B%97%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8B/" class="image" style="--bg-image: url('https://distributed.codes/img/2021/05/covid-19%20vaccine.jpg');">
-    <img class="stretchH" src="https://distributed.codes/img/2021/05/covid-19%20vaccine.jpg" alt="covid-19 vaccine">
-  </a>
-        <header>
-          <h2><a href="/blog/%E6%89%93%E4%BA%86%E7%AC%AC%E4%BA%8C%E9%92%88%E7%A7%91%E5%85%B4%E7%96%AB%E8%8B%97%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8B/">打了第二针科兴疫苗，记录一下</a></h2>
-          <time class="published" datetime="2021-05-18 10:54:36 &#43;0800 CST">May 18, 2021</time>
+          <time class="published" datetime="2021-05-22 00:48:55 &#43;0800 &#43;0800">May 22, 2021</time>
         </header>
       </article>
       
@@ -480,6 +480,9 @@ model<span style="color:#f92672">.</span>fit(
           
           <li>
               <a href="/categories/dev/">dev<span class="count">1</span></a>
+          
+          <li>
+              <a href="/categories/work/">work<span class="count">1</span></a>
           
           </li>
         </ul>
@@ -552,7 +555,7 @@ model<span style="color:#f92672">.</span>fit(
   <p class="copyright">
     © 2021 Distributed Codes
       <br>
-    主题: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>移植自 <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | 由 <a href='https://gohugo.io/' target='_blank' rel='noopener' title='0.82.1'>Hugo</a> 驱动
+    主题: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>移植自 <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | 由 <a href='https://gohugo.io/' target='_blank' rel='noopener' title='0.87.0'>Hugo</a> 驱动
   </p>
 </footer>
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
